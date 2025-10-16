@@ -11,6 +11,11 @@
         padding: 0;
       }
 
+      html,
+      body {
+        overflow-x: hidden;
+      }
+
       .header {
         height: 64px;
         display: flex;
@@ -242,7 +247,7 @@
         }
 
         .hero {
-          padding: 48px 48px;
+          box-sizing: border-box;
         }
 
         .features {
@@ -264,6 +269,12 @@
 
         .feature-image-text {
           font-size: 32px;
+        }
+
+        .announcement {
+          font-size: 32px;
+          box-sizing: border-box;
+          padding: 0 32px;
         }
       }
     </style>
