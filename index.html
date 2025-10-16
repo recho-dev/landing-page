@@ -29,6 +29,7 @@
         font-family: "Inter var experimental", "Inter var", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
         font-weight: 900;
+        text-align: center;
       }
 
       .content {
@@ -230,26 +231,39 @@
         .more-menu-container {
           display: inline-block;
         }
+
+        .tagline h1 {
+          font-size: 40px;
+        }
+
+        .description {
+          font-size: 16px;
+          margin-top: 32px;
+        }
+
+        .hero {
+          padding: 48px 48px;
+        }
       }
     </style>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const moreButton = document.getElementById('moreButton');
-        const dropdownMenu = document.getElementById('dropdownMenu');
-        
+      document.addEventListener("DOMContentLoaded", function () {
+        const moreButton = document.getElementById("moreButton");
+        const dropdownMenu = document.getElementById("dropdownMenu");
+
         if (moreButton && dropdownMenu) {
-          moreButton.addEventListener('click', function(e) {
+          moreButton.addEventListener("click", function (e) {
             e.stopPropagation();
-            dropdownMenu.classList.toggle('show');
+            dropdownMenu.classList.toggle("show");
           });
-          
+
           // Close dropdown when clicking outside
-          document.addEventListener('click', function() {
-            dropdownMenu.classList.remove('show');
+          document.addEventListener("click", function () {
+            dropdownMenu.classList.remove("show");
           });
-          
+
           // Prevent dropdown from closing when clicking inside it
-          dropdownMenu.addEventListener('click', function(e) {
+          dropdownMenu.addEventListener("click", function (e) {
             e.stopPropagation();
           });
         }
@@ -281,7 +295,8 @@
           <h1>for Coders and Artists</h1>
         </div>
         <p class="description">
-          What if code were the most flexible and efficient user interface? How might we reshape the way we edit and create in the age of Generative AI? Recho explores.
+          What if code were the most flexible and efficient user interface? How might we reshape the way we edit and
+          create in the age of Generative AI? Recho explores.
         </p>
       </div>
       <ul class="features">
