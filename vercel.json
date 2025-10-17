@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/notebook",
-      "destination": "https://notebook-t9xi.vercel.app/notebook"
+      "destination": "https://recho-notebook.vercel.app/notebook"
     },
     {
       "source": "/notebook/:path*",
-      "destination": "https://notebook-t9xi.vercel.app/notebook/:path*"
+      "destination": "https://recho-notebook.vercel.app/notebook/:path*"
     }
   ]
 }
