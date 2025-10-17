@@ -15,7 +15,17 @@ export default function Home() {
       <main className="main">
         <Hero />
         <Features />
-        <p className="announcement">We want to live in the editor forever!</p>
+        <div className="cta-section">
+          <p className="announcement">We want to live in the editor forever!</p>
+          <a 
+            href="https://recho.dev/notebook" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="get-started-button"
+          >
+            Get Started
+          </a>
+        </div>
       </main>
     </>
   );

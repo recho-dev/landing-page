@@ -41,15 +41,41 @@
   white-space: nowrap;
 }
 
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 128px;
+  margin-bottom: 192px;
+}
+
+.get-started-button {
+  display: inline-block;
+  padding: 20px 40px;
+  background: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Inter var experimental", "Inter var", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  transition: all 0.3s ease;
+  margin-top: 64px;
+}
+
+.get-started-button:hover {
+  background: linear-gradient(to right, #4269d0, #efb118, #ff725c);
+}
+
 .announcement {
   font-size: 64px;
   font-weight: 600;
   font-family: "Inter var experimental", "Inter var", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  margin-bottom: 192px;
   width: 100%;
   text-align: center;
-  margin-top: 128px;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -64,6 +90,17 @@
 
   .hero {
     box-sizing: border-box;
+  }
+
+  .cta-section {
+    margin-top: 64px;
+    margin-bottom: 96px;
+  }
+
+  .get-started-button {
+    padding: 16px 32px;
+    font-size: 18px;
+    margin-top: 32px;
   }
 
   .announcement {
