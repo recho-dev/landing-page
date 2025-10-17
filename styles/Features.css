@@ -1,0 +1,79 @@
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+}
+
+.feature {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 24px;
+  width: 33.33%;
+  cursor: pointer;
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Inter var experimental", "Inter var", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.feature-description {
+  font-size: 16px;
+  font-family: "Inter var experimental", "Inter var", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.feature-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.feature-image-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: 900;
+  font-family: "Inter var experimental", "Inter var", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .feature {
+    width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .feature-image {
+    height: calc(70vw - 32px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .feature-image-text {
+    font-size: 32px;
+  }
+}
