@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/notebook/:path*",
+      "destination": "https://notebook-t9xi.vercel.app/notebook/:path*"
+    }
+  ]
+}
