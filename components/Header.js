@@ -1,4 +1,5 @@
 import {useState, useEffect, useRef} from "react";
+import Link from "next/link";
 
 export default function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -32,7 +33,9 @@ export default function Header() {
   return (
     <header className="header">
       <div>
-        <span className="logo">Recho</span>
+        <Link href="/" className="logo">
+          Recho
+        </Link>
       </div>
       <div>
         <span className="nav-item mobile-hidden">
