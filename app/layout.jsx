@@ -3,6 +3,7 @@ import "../styles/Header.css";
 import "../styles/Hero.css";
 import "../styles/Features.css";
 import "../styles/Error.css";
+import Header from "../components/Header";
 
 export const metadata = {
   title: "Recho",
@@ -15,7 +16,10 @@ export default function RootLayout({children}) {
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className="content">{children}</body>
+      <body className="content">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

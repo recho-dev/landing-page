@@ -2,10 +2,12 @@
 
 import {useState, useEffect, useRef} from "react";
 import Link from "next/link";
+import {usePathname} from "next/navigation";
 
 export default function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const pathname = usePathname();
 
   const handleComingSoon = () => {
     alert("Stay tuned, coming soon!");
@@ -32,11 +34,16 @@ export default function Header() {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+  const isNewsPage = pathname.startsWith("/news");
+
   return (
     <header className="header">
-      <div>
+      <div className="left-nav">
         <Link href="/" className="logo">
           Recho
+        </Link>
+        <Link href="/news" className={`nav-item ${isNewsPage ? "active" : ""}`}>
+          News
         </Link>
       </div>
       <div>
