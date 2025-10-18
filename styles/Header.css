@@ -6,6 +6,12 @@
   justify-content: space-between;
 }
 
+.left-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .logo {
   font-size: 24px;
   font-weight: 600;
@@ -26,6 +32,7 @@
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+  text-decoration: none;
 }
 
 .nav-item a {
@@ -35,6 +42,12 @@
 
 .nav-item:hover {
   background-color: #f0f0f0;
+}
+
+.nav-item.active {
+  background-color: #f5f5f5;
+  color: #000;
+  font-weight: 500;
 }
 
 .more-menu-container {
