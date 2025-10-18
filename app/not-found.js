@@ -1,15 +1,14 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import Header from '../components/Header'
 
-export default function Custom404() {
+export const metadata = {
+  title: "404 - Page Not Found | Recho",
+  description: "Page not found - Recho",
+};
+
+export default function NotFound() {
   return (
     <>
-      <Head>
-        <title>404 - Page Not Found | Recho</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Page not found - Recho" />
-      </Head>
       <Header />
       <div className="error-page">
         <h1 className="error-title">404</h1>
@@ -21,3 +20,4 @@ export default function Custom404() {
     </>
   )
 }
+

@@ -1,3 +1,5 @@
+'use client'
+
 export default function Features() {
   const handleComingSoon = () => {
     alert("Stay tuned, coming soon!");
