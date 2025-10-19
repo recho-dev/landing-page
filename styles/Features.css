@@ -13,7 +13,6 @@
   border-radius: 8px;
   padding: 24px;
   width: 33.33%;
-  cursor: pointer;
 }
 
 .feature-title {
@@ -42,6 +41,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .feature-image-text {
