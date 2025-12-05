@@ -7,6 +7,14 @@
     {
       "source": "/notebook/:path*",
       "destination": "https://recho-notebook.vercel.app/notebook/:path*"
+    },
+    {
+      "source": "/melody",
+      "destination": "https://recho-melody.vercel.app/melody"
+    },
+    {
+      "source": "/melody/:path*",
+      "destination": "https://recho-melody.vercel.app/melody/:path*"
     }
   ]
 }
