@@ -55,8 +55,10 @@ export default function Header() {
         <span className="nav-item mobile-hidden" onClick={handleComingSoon}>
           Multiples
         </span>
-        <span className="nav-item mobile-hidden" onClick={handleComingSoon}>
-          Melody
+        <span className="nav-item mobile-hidden">
+          <a href="https://recho.dev/melody" target="_blank" rel="noopener noreferrer">
+            Melody
+          </a>
         </span>
         <div className="more-menu-container" ref={dropdownRef}>
           <button className="more-button" onClick={toggleDropdown}>
@@ -69,9 +71,9 @@ export default function Header() {
             <span className="dropdown-item" onClick={handleComingSoon}>
               Multiples
             </span>
-            <span className="dropdown-item" onClick={handleComingSoon}>
+            <a className="dropdown-item" href="https://recho.dev/melody" target="_blank" rel="noopener noreferrer">
               Melody
-            </span>
+            </a>
           </div>
         </div>
         <span className="nav-item">

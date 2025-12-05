@@ -9,6 +9,10 @@ export default function Features() {
     window.open("https://recho.dev/notebook", "_blank");
   };
 
+  const handleMelodyClick = () => {
+    window.open("https://recho.dev/melody", "_blank");
+  };
+
   return (
     <ul className="features">
       <li className="feature">
@@ -32,9 +36,13 @@ export default function Features() {
       <li className="feature">
         <span className="feature-title">Recho Melody</span>
         <span className="feature-description">A Chronological Editor for Coding with Music</span>
-        <span className="feature-image" style={{background: "#ff725c"}} onClick={handleComingSoon}>
-          <span className="feature-image-text">⏳ 🎵</span>
-        </span>
+        <img
+          className="feature-image"
+          src="/melody.png"
+          alt="Recho Melody"
+          style={{background: "#ff725c"}}
+          onClick={handleMelodyClick}
+        />
       </li>
     </ul>
   );
