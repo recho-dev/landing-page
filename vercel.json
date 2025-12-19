@@ -15,6 +15,14 @@
     {
       "source": "/melody/:path*",
       "destination": "https://recho-melody.vercel.app/melody/:path*"
+    },
+    {
+      "source": "/multiples",
+      "destination": "https://recho-multiples.vercel.app/multiples"
+    },
+    {
+      "source": "/multiples/:path*",
+      "destination": "https://recho-multiples.vercel.app/multiples/:path*"
     }
   ]
 }
