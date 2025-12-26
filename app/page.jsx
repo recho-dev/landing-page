@@ -8,10 +8,12 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main style={{position: "absolute"}}>
-      <Hero />
+    <main>
+      <div className="content-wrapper">
+        <Hero />
+      </div>
       <Features />
-      <div className="cta-section">
+      <div className="cta-section content-wrapper">
         <p className="announcement">We want to live in the editor forever!</p>
         <a href="https://recho.dev/notebook" target="_blank" rel="noopener noreferrer" className="get-started-button">
           Get Started
