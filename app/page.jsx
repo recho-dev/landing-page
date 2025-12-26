@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="main">
+    <main style={{position: "absolute"}}>
       <Hero />
       <Features />
       <div className="cta-section">

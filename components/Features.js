@@ -2,7 +2,19 @@ import Image from "next/image";
 
 export default function Features() {
   return (
-    <ul className="features">
+    <ul
+      className="features"
+      style={{
+        position: "relative",
+        left: "50%",
+        right: "50%",
+        marginLeft: "-50vw",
+        marginRight: "-50vw",
+        width: "calc(100vw - 32px)",
+        paddingLeft: "16px",
+        paddingRight: "16px",
+      }}
+    >
       <li className="feature">
         <a href="https://recho.dev/notebook" target="_blank" rel="noopener noreferrer" className="feature-title">
           Recho Notebook
