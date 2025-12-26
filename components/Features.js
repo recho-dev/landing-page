@@ -1,48 +1,58 @@
-"use client";
+import Image from "next/image";
 
 export default function Features() {
-  const handleComingSoon = () => {
-    alert("Stay tuned, coming soon!");
-  };
-
-  const handleNotebookClick = () => {
-    window.open("https://recho.dev/notebook", "_blank");
-  };
-
-  const handleMelodyClick = () => {
-    window.open("https://recho.dev/melody", "_blank");
-  };
-
   return (
     <ul className="features">
       <li className="feature">
-        <span className="feature-title">Recho Notebook</span>
+        <a href="https://recho.dev/notebook" target="_blank" rel="noopener noreferrer" className="feature-title">
+          Recho Notebook
+        </a>
         <span className="feature-description">A Reactive Editor for Algorithms and ASCII Art</span>
-        <img
-          className="feature-image"
-          src="/notebook.png"
-          alt="Recho Notebook"
+        <a
+          href="https://recho.dev/notebook"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="feature-image-wrapper"
           style={{background: "#4269d0"}}
-          onClick={handleNotebookClick}
-        />
+        >
+          <Image className="feature-image" src="/notebook.png" alt="Recho Notebook" fill style={{objectFit: "cover"}} />
+        </a>
       </li>
       <li className="feature">
-        <span className="feature-title">Recho Multiples</span>
+        <a href="https://recho.dev/multiples" target="_blank" rel="noopener noreferrer" className="feature-title">
+          Recho Multiples
+        </a>
         <span className="feature-description">An Exploratory Editor for Creative Coding</span>
-        <span className="feature-image" style={{background: "#efb118"}} onClick={handleComingSoon}>
-          <span className="feature-image-text">⏳ 🌲</span>
-        </span>
+        <a
+          href="https://recho.dev/multiples"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="feature-image-wrapper"
+          style={{background: "#efb118"}}
+        >
+          <Image
+            className="feature-image"
+            src="/multiples.png"
+            alt="Recho Multiples"
+            fill
+            style={{objectFit: "cover"}}
+          />
+        </a>
       </li>
       <li className="feature">
-        <span className="feature-title">Recho Melody</span>
+        <a href="https://recho.dev/melody" target="_blank" rel="noopener noreferrer" className="feature-title">
+          Recho Melody
+        </a>
         <span className="feature-description">A Chronological Editor for Coding with Music</span>
-        <img
-          className="feature-image"
-          src="/melody.png"
-          alt="Recho Melody"
+        <a
+          href="https://recho.dev/melody"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="feature-image-wrapper"
           style={{background: "#ff725c"}}
-          onClick={handleMelodyClick}
-        />
+        >
+          <Image className="feature-image" src="/melody.png" alt="Recho Melody" fill style={{objectFit: "cover"}} />
+        </a>
       </li>
     </ul>
   );

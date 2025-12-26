@@ -9,10 +9,6 @@ export default function Header() {
   const dropdownRef = useRef(null);
   const pathname = usePathname();
 
-  const handleComingSoon = () => {
-    alert("Stay tuned, coming soon!");
-  };
-
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -52,8 +48,10 @@ export default function Header() {
             Notebook
           </a>
         </span>
-        <span className="nav-item mobile-hidden" onClick={handleComingSoon}>
-          Multiples
+        <span className="nav-item mobile-hidden">
+          <a href="https://recho.dev/multiples" target="_blank" rel="noopener noreferrer">
+            Multiples
+          </a>
         </span>
         <span className="nav-item mobile-hidden">
           <a href="https://recho.dev/melody" target="_blank" rel="noopener noreferrer">
@@ -68,9 +66,9 @@ export default function Header() {
             <a className="dropdown-item" href="https://recho.dev/notebook" target="_blank" rel="noopener noreferrer">
               Notebook
             </a>
-            <span className="dropdown-item" onClick={handleComingSoon}>
+            <a className="dropdown-item" href="https://recho.dev/multiples" target="_blank" rel="noopener noreferrer">
               Multiples
-            </span>
+            </a>
             <a className="dropdown-item" href="https://recho.dev/melody" target="_blank" rel="noopener noreferrer">
               Melody
             </a>
