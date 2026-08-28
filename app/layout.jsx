@@ -4,6 +4,7 @@ import "../styles/Hero.css";
 import "../styles/Features.css";
 import "../styles/Error.css";
 import Header from "../components/Header";
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata = {
   title: "Recho",
@@ -21,6 +22,7 @@ export default function RootLayout({children}) {
           <Header />
         </div>
         {children}
+        <Analytics />
       </body>
     </html>
   );
