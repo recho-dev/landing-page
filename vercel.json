@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/notebook/_vercel/insights/:path*",
+      "destination": "https://recho-notebook.vercel.app/_vercel/insights/:path*"
+    },
+    {
       "source": "/notebook",
       "destination": "https://recho-notebook.vercel.app/notebook"
     },
