@@ -2,8 +2,6 @@
 
 The landing page for [recho.dev](https://recho.dev) — light domain-specific code editors for coders and artists.
 
-News lives in [Recho Notebook](https://recho.dev/notebook/news). `/news` on this site permanently redirects there.
-
 ## Development
 
 ```bash
