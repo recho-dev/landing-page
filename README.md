@@ -1,58 +1,23 @@
-# Recho Landing Page
+# Recho Website
 
-A Next.js landing page for Recho - Light Domain-Specific Code Editors for Coders and Artists.
+The landing page for [recho.dev](https://recho.dev) — light domain-specific code editors for coders and artists.
 
-## Getting Started
+News lives in [Recho Notebook](https://recho.dev/notebook/news). `/news` on this site permanently redirects there.
 
-First, install the dependencies:
+## Development
 
 ```bash
 npm install
-# or
-yarn install
-# or
-pnpm install
-```
-
-Then, run the development server:
-
-```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-## Project Structure
+## Deploy
 
-- `pages/` - Next.js pages
-  - `index.js` - Main landing page
-  - `_app.js` - Custom App component
-  - `_document.js` - Custom Document component
-- `components/` - React components
-  - `Header.js` - Navigation header with responsive menu
-  - `Hero.js` - Hero section with tagline
-  - `Features.js` - Feature cards section
-- `styles/` - CSS files
-  - `globals.css` - Global styles
-- `public/` - Static assets
-  - `notebook.png` - Recho Notebook screenshot
-
-## Building for Production
+Hosted on Vercel. Production build:
 
 ```bash
 npm run build
 npm start
 ```
-
-## Deployment
-
-This project is optimized for deployment on Vercel:
-
-```bash
-vercel
-```
-
