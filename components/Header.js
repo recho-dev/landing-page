@@ -2,12 +2,10 @@
 
 import {useState, useEffect, useRef} from "react";
 import Link from "next/link";
-import {usePathname} from "next/navigation";
 
 export default function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
-  const pathname = usePathname();
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -30,17 +28,15 @@ export default function Header() {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
-  const isNewsPage = pathname.startsWith("/news");
-
   return (
     <header className="header">
       <div className="left-nav">
         <Link href="/" className="logo">
           Recho
         </Link>
-        <Link href="/news" className={`nav-item ${isNewsPage ? "active" : ""}`}>
+        <a href="https://recho.dev/notebook/news" className="nav-item">
           News
-        </Link>
+        </a>
       </div>
       <div>
         <span className="nav-item mobile-hidden">
